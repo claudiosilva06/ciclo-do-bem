@@ -108,6 +108,6 @@ Projeto desenvolvido para o Challenge FIAP 2026 em parceria com a **Turma do Bem
 
 ## 📬 Contato
 
-- **E-mail do grupo:** [email-do-grupo]@exemplo.com
+- **E-mail do grupo:** projetotdbfiap@gmail.com
 - **Issues do repositório:** [github.com/claudiosilva06/ciclo-do-bem/issues](https://github.com/claudiosilva06/ciclo-do-bem/issues)
 - Ou pela página [Contato](contato.html) do site.
