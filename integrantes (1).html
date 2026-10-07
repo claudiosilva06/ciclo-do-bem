@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça a equipe que desenvolve o Ciclo do Bem.">
+    <title>Integrantes | Ciclo do Bem</title>
+    <link rel="icon" href="assets/imagens/logo-ciclo-do-bem.svg" type="image/svg+xml">
+
+    <!-- Fontes: Poppins (títulos) e Nunito (textos) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Estilos do projeto: base > componentes > páginas -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/componentes.css">
+    <link rel="stylesheet" href="css/paginas.css">
+</head>
+<body>
+    <!-- Atalho de acessibilidade para quem navega pelo teclado -->
+    <a href="#conteudo" class="pular-conteudo">Pular para o conteúdo</a>
+
+    <!-- ===== CABEÇALHO (igual em todas as páginas) ===== -->
+    <header class="cabecalho">
+        <div class="container cabecalho-conteudo">
+            <a href="index.html" class="logo" aria-label="Ciclo do Bem — voltar para a página inicial">
+                <img class="logo-imagem" src="assets/imagens/logo-ciclo-do-bem.svg" alt="" width="44" height="44">
+                <span class="logo-texto">Ciclo do Bem</span>
+            </a>
+
+            <!-- Menu principal de navegação -->
+            <nav aria-label="Menu principal">
+                <ul class="menu-lista">
+                    <li><a href="index.html" class="menu-link">Início</a></li>
+                    <li><a href="sobre.html" class="menu-link">Sobre</a></li>
+                    <li class="menu-item-submenu">
+                        <a href="doador.html" class="menu-link menu-link-seta">Solução</a>
+                        <ul class="submenu">
+                            <li><a href="doador.html" class="submenu-link">Para doadores<span class="submenu-descricao">Nota Fiscal Paulista e portal</span></a></li>
+                            <li><a href="empresas.html" class="submenu-link">Para empresas<span class="submenu-descricao">Funil, patrocínio e editais</span></a></li>
+                            <li><a href="painel.html" class="submenu-link">Painel da equipe<span class="submenu-descricao">Indicadores e alertas</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="integrantes.html" class="menu-link menu-link-ativo" aria-current="page">Integrantes</a></li>
+                    <li><a href="faq.html" class="menu-link">FAQ</a></li>
+                    <li><a href="contato.html" class="btn btn-primario btn-pequeno">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== CONTEÚDO PRINCIPAL ===== -->
+    <main id="conteudo">
+        <!-- ===== TOPO DA PÁGINA ===== -->
+        <section class="topo-pagina" aria-labelledby="titulo-pagina">
+            <div class="container">
+                <div class="topo-pagina-conteudo">
+                    <span class="etiqueta">Quem somos</span>
+                    <h1 id="titulo-pagina">A equipe por trás do Ciclo do Bem</h1>
+                    <p class="texto-destaque">Estudantes da turma 1TDSPB da FIAP desenvolvendo uma solução real para a Turma do Bem.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CARTÕES DOS INTEGRANTES ===== -->
+        <!-- Para cada integrante: trocar a foto, o nome, o RM, o papel e os links -->
+        <section class="secao" aria-labelledby="titulo-equipe">
+            <div class="container">
+                <div class="secao-cabecalho secao-cabecalho-centro">
+                    <span class="etiqueta">Integrantes</span>
+                    <h2 id="titulo-equipe">Nossa equipe</h2>
+                    <p>Cada integrante liderou uma parte do projeto, e todos participaram das decisões da solução.</p>
+                </div>
+
+                <div class="integrantes-grade">
+                    <!-- Integrante 1 -->
+                    <article class="card cartao-integrante">
+                        <img class="integrante-foto" src="assets/imagens/integrantes/integrante-1.svg" alt="Foto de Asaffe Gabriel" width="132" height="132">
+                        <h3>Asaffe Gabriel</h3>
+                        <p class="integrante-papel">Front-End e design</p>
+                        <dl class="integrante-dados">
+                            <div><dt>RM</dt><dd>574554</dd></div>
+                            <div><dt>Turma</dt><dd>1TDSPB</dd></div>
+                        </dl>
+                        <ul class="integrante-links">
+                            <li><a href="https://github.com/Asaffeggmsmfj" class="btn btn-contorno btn-pequeno" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Asaffe Gabriel"><img class="icone-inline" src="assets/icones/icone-codigo.svg" alt="">GitHub</a></li>
+                            <li><a href="https://www.linkedin.com/in/asaffe-gabriel-bb4288302/" class="btn btn-contorno btn-pequeno" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Asaffe Gabriel"><img class="icone-inline" src="assets/icones/icone-perfil.svg" alt="">LinkedIn</a></li>
+                        </ul>
+                    </article>
+
+                    <!-- Integrante 2 -->
+                    <article class="card cartao-integrante">
+                        <img class="integrante-foto" src="assets/imagens/integrantes/integrante-2.svg" alt="Foto de Gustavo Almeida" width="132" height="132">
+                        <h3>Gustavo Almeida</h3>
+                        <p class="integrante-papel">Back-end Java e DDD</p>
+                        <dl class="integrante-dados">
+                            <div><dt>RM</dt><dd>576939</dd></div>
+                            <div><dt>Turma</dt><dd>1TDSPB</dd></div>
+                        </dl>
+                        <ul class="integrante-links">
+                            <li><a href="https://github.com/gtzall" class="btn btn-contorno btn-pequeno" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Gustavo Almeida"><img class="icone-inline" src="assets/icones/icone-codigo.svg" alt="">GitHub</a></li>
+                            <li><a href="https://www.linkedin.com/in/gustavo-almeida-rodrigues/" class="btn btn-contorno btn-pequeno" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Gustavo Almeida"><img class="icone-inline" src="assets/icones/icone-perfil.svg" alt="">LinkedIn</a></li>
+                        </ul>
+                    </article>
+
+                    <!-- Integrante 3 -->
+                    <article class="card cartao-integrante">
+                        <img class="integrante-foto" src="assets/imagens/integrantes/integrante-3.svg" alt="Foto de Moises Alciati" width="132" height="132">
+                        <h3>Moises Alciati</h3>
+                        <p class="integrante-papel">Banco de dados</p>
+                        <dl class="integrante-dados">
+                            <div><dt>RM</dt><dd>575893</dd></div>
+                            <div><dt>Turma</dt><dd>1TDSPB</dd></div>
+                        </dl>
+                        <ul class="integrante-links">
+                            <li><a href="https://github.com/moisesalciati" class="btn btn-contorno btn-pequeno" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Moises Alciati"><img class="icone-inline" src="assets/icones/icone-codigo.svg" alt="">GitHub</a></li>
+                            <li><a href="https://www.linkedin.com/in/moises-de-oliveira-alciati-08a944441/" class="btn btn-contorno btn-pequeno" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Moises Alciati"><img class="icone-inline" src="assets/icones/icone-perfil.svg" alt="">LinkedIn</a></li>
+                        </ul>
+                    </article>
+
+                    <!-- Integrante 4 -->
+                    <article class="card cartao-integrante">
+                        <img class="integrante-foto" src="assets/imagens/integrantes/claudio.png" alt="Foto de Claudio Augusto Silva de Assis" width="132" height="132">
+                        <h3>Claudio Augusto Silva de Assis</h3>
+                        <p class="integrante-papel">Python, IA e chatbot</p>
+                        <dl class="integrante-dados">
+                            <div><dt>RM</dt><dd>576661</dd></div>
+                            <div><dt>Turma</dt><dd>1TDSPB</dd></div>
+                        </dl>
+                        <ul class="integrante-links">
+                            <li><a href="https://github.com/claudiosilva06" class="btn btn-contorno btn-pequeno" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Claudio Augusto Silva de Assis"><img class="icone-inline" src="assets/icones/icone-codigo.svg" alt="">GitHub</a></li>
+                            <li><a href="https://www.linkedin.com/in/claudio-augusto-b7660a433/" class="btn btn-contorno btn-pequeno" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Claudio Augusto Silva de Assis"><img class="icone-inline" src="assets/icones/icone-perfil.svg" alt="">LinkedIn</a></li>
+                        </ul>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== RODAPÉ (igual em todas as páginas) ===== -->
+    <footer class="rodape">
+        <div class="container">
+            <div class="rodape-grade">
+                <div>
+                    <a href="index.html" class="logo" aria-label="Ciclo do Bem — página inicial">
+                        <img class="logo-imagem" src="assets/imagens/logo-ciclo-do-bem.svg" alt="" width="44" height="44">
+                        <span class="logo-texto">Ciclo do Bem</span>
+                    </a>
+                    <p class="rodape-descricao">Plataforma de captação e relacionamento com apoiadores, proposta para a Turma do Bem no Challenge FIAP.</p>
+                </div>
+
+                <nav aria-label="Páginas do site">
+                    <h2 class="rodape-titulo">Navegação</h2>
+                    <ul class="rodape-lista">
+                        <li><a href="index.html" class="rodape-link">Início</a></li>
+                        <li><a href="sobre.html" class="rodape-link">Sobre</a></li>
+                        <li><a href="integrantes.html" class="rodape-link">Integrantes</a></li>
+                        <li><a href="faq.html" class="rodape-link">FAQ</a></li>
+                        <li><a href="contato.html" class="rodape-link">Contato</a></li>
+                    </ul>
+                </nav>
+
+                <nav aria-label="Páginas da solução">
+                    <h2 class="rodape-titulo">Solução</h2>
+                    <ul class="rodape-lista">
+                        <li><a href="doador.html" class="rodape-link">Para doadores</a></li>
+                        <li><a href="empresas.html" class="rodape-link">Para empresas</a></li>
+                        <li><a href="painel.html" class="rodape-link">Painel da equipe</a></li>
+                    </ul>
+                </nav>
+
+                <div>
+                    <h2 class="rodape-titulo">Projeto</h2>
+                    <ul class="rodape-lista">
+                        <li><a href="https://github.com/claudiosilva06/ciclo-do-bem" class="rodape-link" target="_blank" rel="noopener noreferrer">Repositório no GitHub</a></li>
+                        <li><a href="mailto:projetotdbfiap@gmail.com" class="rodape-link">E-mail do grupo</a></li>
+                        <li><span class="rodape-link">Turma 1TDSPB · FIAP</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="rodape-base">
+                <p>© 2026 [Nome do grupo] · Projeto acadêmico do Challenge FIAP em parceria com a Turma do Bem.</p>
+                <p>Protótipo estático · dados ilustrativos</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
