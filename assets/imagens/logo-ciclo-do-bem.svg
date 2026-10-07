@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Logo Ciclo do Bem: dois arcos (laranja e verde) formando um ciclo, com um coração no centro -->
+  <path d="M32 6a26 26 0 0 1 25.4 20.6" fill="none" stroke="#f28c28" stroke-width="7" stroke-linecap="round"/>
+  <path d="M57.6 33A26 26 0 0 1 12.2 49.6" fill="none" stroke="#7ab648" stroke-width="7" stroke-linecap="round"/>
+  <path d="M8.6 41A26 26 0 0 1 24 7.4" fill="none" stroke="#f28c28" stroke-width="7" stroke-linecap="round"/>
+  <path d="M32 44s-11-6.6-11-14c0-3.6 2.6-6 5.6-6 2.2 0 4 1.2 5.4 3.2 1.4-2 3.2-3.2 5.4-3.2 3 0 5.6 2.4 5.6 6 0 7.4-11 14-11 14z" fill="#1f4a2c"/>
+</svg>

@@ -1,0 +1,689 @@
+/* =========================================================
+   CICLO DO BEM — componentes.css
+   Peças reutilizáveis em várias páginas:
+   1. Cards
+   2. Ícones em círculo
+   3. Selos (badges)
+   4. Passo a passo numerado
+   5. Tabelas
+   6. Formulários
+   7. FAQ (perguntas com details/summary)
+   8. Linha do tempo (roadmap)
+   9. Janela de protótipo
+   10. Barras de progresso e larguras
+   11. Indicadores (KPIs)
+   12. Chat do chatbot
+   13. Faixa de chamada e aviso
+   14. Media queries
+   ========================================================= */
+
+
+/* ---------- 1. Cards ---------- */
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 32px;
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--raio);
+    background-color: var(--cor-branco);
+    box-shadow: var(--sombra);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card-interativo:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--sombra-forte);
+}
+
+/* Card escuro para destacar o item principal de um grupo */
+.card-escuro {
+    border-color: var(--cor-verde-escuro);
+    background-color: var(--cor-verde-escuro);
+}
+
+.card-escuro h3 {
+    color: var(--cor-branco);
+}
+
+.card-escuro .selo-laranja {
+    color: #8a3d05;
+}
+
+.card-escuro .etiqueta {
+    color: var(--cor-laranja);
+}
+
+.card-escuro p,
+.card-escuro li {
+    color: #d6e6d9;
+}
+
+.card-laranja {
+    border-color: var(--cor-laranja-claro);
+    background-color: var(--cor-laranja-claro);
+}
+
+.card-link {
+    margin-top: auto;
+    font-family: var(--fonte-titulo);
+    font-weight: 600;
+    color: var(--cor-laranja-escuro);
+    text-decoration: none;
+}
+
+.card-link:hover {
+    text-decoration: underline;
+}
+
+.card-escuro .card-link {
+    color: var(--cor-laranja);
+}
+
+
+/* ---------- 2. Ícones em círculo ---------- */
+.icone-circulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: var(--cor-verde-claro);
+}
+
+.icone-circulo img {
+    width: 28px;
+    height: 28px;
+}
+
+.icone-circulo-laranja {
+    background-color: var(--cor-laranja-claro);
+}
+
+.icone-circulo-pequeno {
+    width: 40px;
+    height: 40px;
+}
+
+.icone-circulo-pequeno img {
+    width: 20px;
+    height: 20px;
+}
+
+.icone-inline {
+    width: 18px;
+    height: 18px;
+}
+
+
+/* ---------- 3. Selos (badges) ---------- */
+.selo {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 999px;
+    font-family: var(--fonte-titulo);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    background-color: var(--cor-verde-claro);
+    color: var(--cor-verde-escuro);
+}
+
+.selo-laranja {
+    background-color: var(--cor-laranja-claro);
+    color: #8a3d05;
+}
+
+.selo-alerta {
+    background-color: var(--cor-alerta-claro);
+    color: var(--cor-alerta);
+}
+
+.selo-escuro {
+    background-color: var(--cor-verde-escuro);
+    color: var(--cor-branco);
+}
+
+
+/* ---------- 4. Passo a passo numerado ---------- */
+.passos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    list-style: none;
+    counter-reset: passo;
+}
+
+.passo {
+    position: relative;
+    padding: 28px 24px 24px;
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--raio);
+    background-color: var(--cor-branco);
+    counter-increment: passo;
+}
+
+/* Número automático de cada passo */
+.passo::before {
+    content: counter(passo);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 16px;
+    border-radius: 50%;
+    background-color: var(--cor-laranja);
+    font-family: var(--fonte-titulo);
+    font-weight: 700;
+    color: var(--cor-verde-escuro);
+}
+
+.passo h3 {
+    margin-bottom: 8px;
+}
+
+.passo-destaque {
+    border-color: var(--cor-verde-escuro);
+    background-color: var(--cor-verde-escuro);
+}
+
+.passo-destaque h3 {
+    color: var(--cor-branco);
+}
+
+.passo-destaque p {
+    color: #d6e6d9;
+}
+
+
+/* ---------- 5. Tabelas ---------- */
+.tabela-envoltorio {
+    overflow: hidden;
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--raio);
+    background-color: var(--cor-branco);
+}
+
+.tabela {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+
+.tabela caption {
+    padding: 16px 20px;
+    font-family: var(--fonte-titulo);
+    font-weight: 600;
+    text-align: left;
+    color: var(--cor-verde-escuro);
+}
+
+.tabela th {
+    padding: 14px 20px;
+    background-color: var(--cor-verde-escuro);
+    font-family: var(--fonte-titulo);
+    font-size: 14px;
+    font-weight: 600;
+    text-align: left;
+    color: var(--cor-branco);
+}
+
+.tabela td {
+    padding: 14px 20px;
+    border-top: 1px solid var(--cor-borda);
+    color: var(--cor-texto-suave);
+    vertical-align: top;
+}
+
+.tabela tbody tr:nth-child(even) {
+    background-color: #fffcf6;
+}
+
+.tabela-coluna-forte {
+    font-weight: 700;
+    color: var(--cor-texto);
+}
+
+
+/* ---------- 6. Formulários ---------- */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.formulario-linha {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.campo-rotulo {
+    font-family: var(--fonte-titulo);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--cor-verde-escuro);
+}
+
+.campo-obrigatorio {
+    color: var(--cor-alerta);
+}
+
+.campo-entrada {
+    width: 100%;
+    padding: 13px 16px;
+    border: 2px solid var(--cor-borda);
+    border-radius: var(--raio-pequeno);
+    background-color: var(--cor-branco);
+    font-family: var(--fonte-texto);
+    font-size: 16px;
+    color: var(--cor-texto);
+    transition: border-color 0.2s;
+}
+
+.campo-entrada::placeholder {
+    color: #8a978e;
+}
+
+.campo-entrada:focus {
+    border-color: var(--cor-verde-medio);
+    outline: none;
+}
+
+.campo-area {
+    min-height: 140px;
+    resize: vertical;
+}
+
+.campo-ajuda {
+    font-size: 14px;
+    color: var(--cor-texto-suave);
+}
+
+.campo-checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 15px;
+    color: var(--cor-texto-suave);
+}
+
+.campo-checkbox input {
+    width: 20px;
+    height: 20px;
+    margin-top: 3px;
+    accent-color: var(--cor-verde-medio);
+}
+
+/* Área de envio de arquivo (print da Nota Fiscal Paulista) */
+.campo-arquivo {
+    padding: 28px;
+    border: 2px dashed var(--cor-verde);
+    border-radius: var(--raio);
+    background-color: var(--cor-verde-claro);
+    text-align: center;
+}
+
+
+/* ---------- 7. FAQ ---------- */
+.faq-grupo {
+    margin-bottom: 48px;
+}
+
+.faq-grupo h2 {
+    margin-bottom: 20px;
+    font-size: 26px;
+}
+
+.faq-item {
+    margin-bottom: 12px;
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--raio);
+    background-color: var(--cor-branco);
+}
+
+.faq-pergunta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 20px 24px;
+    font-family: var(--fonte-titulo);
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--cor-verde-escuro);
+    list-style: none;
+    cursor: pointer;
+}
+
+/* Remove o marcador padrão do summary */
+.faq-pergunta::-webkit-details-marker {
+    display: none;
+}
+
+/* Sinal de + / − feito em CSS */
+.faq-pergunta::after {
+    content: "+";
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: var(--cor-laranja-claro);
+    font-size: 20px;
+    color: var(--cor-laranja-escuro);
+}
+
+.faq-item[open] .faq-pergunta::after {
+    content: "−";
+}
+
+.faq-item[open] {
+    border-color: var(--cor-verde);
+}
+
+.faq-resposta {
+    padding: 0 24px 22px;
+}
+
+
+/* ---------- 8. Linha do tempo (roadmap) ---------- */
+.linha-tempo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    list-style: none;
+}
+
+.linha-tempo-item {
+    position: relative;
+    padding-top: 36px;
+}
+
+/* Linha horizontal que liga as etapas */
+.linha-tempo-item::before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 0;
+    width: calc(100% + 20px);
+    height: 4px;
+    background-color: var(--cor-borda);
+}
+
+.linha-tempo-item:last-child::before {
+    width: 100%;
+}
+
+/* Ponto de cada etapa */
+.linha-tempo-item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 22px;
+    height: 22px;
+    border: 4px solid var(--cor-branco);
+    border-radius: 50%;
+    background-color: var(--cor-borda);
+    box-shadow: 0 0 0 2px var(--cor-borda);
+}
+
+.linha-tempo-atual::after {
+    background-color: var(--cor-laranja);
+    box-shadow: 0 0 0 2px var(--cor-laranja);
+}
+
+.linha-tempo-atual::before {
+    background-color: var(--cor-laranja);
+}
+
+.linha-tempo-data {
+    display: block;
+    margin-bottom: 6px;
+    font-family: var(--fonte-titulo);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--cor-laranja-escuro);
+}
+
+.linha-tempo-item h3 {
+    margin-bottom: 8px;
+}
+
+
+/* ---------- 9. Janela de protótipo ---------- */
+/* Moldura de navegador para mostrar telas do sistema */
+.janela {
+    overflow: hidden;
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--raio);
+    background-color: var(--cor-branco);
+    box-shadow: var(--sombra-forte);
+}
+
+.janela-barra {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--cor-borda);
+    background-color: #f6efe2;
+}
+
+.janela-ponto {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--cor-borda);
+}
+
+.janela-ponto-laranja {
+    background-color: var(--cor-laranja);
+}
+
+.janela-ponto-verde {
+    background-color: var(--cor-verde);
+}
+
+.janela-endereco {
+    flex: 1;
+    margin-left: 12px;
+    padding: 4px 14px;
+    border-radius: 999px;
+    background-color: var(--cor-branco);
+    font-size: 13px;
+    color: var(--cor-texto-suave);
+}
+
+.janela-conteudo {
+    padding: 28px;
+}
+
+
+/* ---------- 10. Barras de progresso e larguras ---------- */
+.barra {
+    overflow: hidden;
+    height: 14px;
+    border-radius: 999px;
+    background-color: var(--cor-borda);
+}
+
+.barra-preenchimento {
+    height: 100%;
+    border-radius: 999px;
+    background-color: var(--cor-laranja);
+}
+
+.barra-preenchimento-verde {
+    background-color: var(--cor-verde-medio);
+}
+
+/* Larguras usadas pelas barras (evita estilo inline no HTML) */
+.largura-25 { width: 25%; }
+.largura-40 { width: 40%; }
+.largura-55 { width: 55%; }
+.largura-70 { width: 70%; }
+.largura-75 { width: 75%; }
+.largura-85 { width: 85%; }
+
+
+/* ---------- 11. Indicadores (KPIs) ---------- */
+.indicador {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 24px;
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--raio);
+    background-color: var(--cor-branco);
+}
+
+.indicador-rotulo {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--cor-texto-suave);
+}
+
+.indicador-valor {
+    font-family: var(--fonte-titulo);
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 1.1;
+    color: var(--cor-verde-escuro);
+}
+
+.indicador-variacao {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--cor-verde-medio);
+}
+
+.indicador-variacao-negativa {
+    color: var(--cor-alerta);
+}
+
+
+/* ---------- 12. Chat do chatbot ---------- */
+.chat {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.balao {
+    max-width: 82%;
+    padding: 12px 16px;
+    border-radius: 18px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.balao-bot {
+    align-self: flex-start;
+    border-bottom-left-radius: 4px;
+    background-color: var(--cor-verde-claro);
+    color: var(--cor-texto);
+}
+
+.balao-usuario {
+    align-self: flex-end;
+    border-bottom-right-radius: 4px;
+    background-color: var(--cor-verde-escuro);
+    color: var(--cor-branco);
+}
+
+.chat-opcoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    list-style: none;
+}
+
+.chat-opcao {
+    padding: 6px 14px;
+    border: 1px solid var(--cor-verde-medio);
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--cor-verde-medio);
+}
+
+
+/* ---------- 13. Faixa de chamada e aviso ---------- */
+.faixa-chamada {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    padding: 48px 56px;
+    border-radius: var(--raio-grande);
+    background-color: var(--cor-laranja);
+}
+
+.faixa-chamada h2 {
+    margin-bottom: 8px;
+    font-size: 30px;
+}
+
+.faixa-chamada p {
+    color: var(--cor-verde-escuro);
+}
+
+/* Aviso de dados ilustrativos */
+.aviso {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 24px;
+    padding: 14px 18px;
+    border-left: 4px solid var(--cor-laranja);
+    border-radius: var(--raio-pequeno);
+    background-color: var(--cor-laranja-claro);
+    font-size: 15px;
+    color: #6b3404;
+}
+
+
+/* ---------- 14. Media queries (desktop) ---------- */
+
+/* Large devices (992px ou mais) */
+@media (min-width: 992px) {
+    .card {
+        padding: 28px;
+    }
+
+    .passo {
+        padding: 24px 20px 20px;
+    }
+}
+
+/* Extra-large devices (1300px ou mais) */
+@media (min-width: 1300px) {
+    .card {
+        padding: 36px;
+    }
+
+    .passos,
+    .linha-tempo {
+        gap: 28px;
+    }
+
+    .indicador-valor {
+        font-size: 40px;
+    }
+
+    .janela-conteudo {
+        padding: 36px;
+    }
+}
