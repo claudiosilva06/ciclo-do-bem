@@ -100,7 +100,7 @@ ciclo-do-bem/
 | <img src="assets/imagens/integrantes/integrante-1.svg" width="60" alt="Foto de Asaffe Gabriel"> | Asaffe Gabriel | 574554 | 1TDSPB | Front-End e design | [GitHub](https://github.com/Asaffeggmsmfj) · [LinkedIn](https://www.linkedin.com/in/asaffe-gabriel-bb4288302/) |
 | <img src="assets/imagens/integrantes/integrante-2.svg" width="60" alt="Foto de Gustavo Almeida"> | Gustavo Almeida | 576939 | 1TDSPB | Back-end Java e DDD | [GitHub](https://github.com/gtzall) · [LinkedIn](https://www.linkedin.com/in/gustavo-almeida-rodrigues/) |
 | <img src="assets/imagens/integrantes/integrante-3.svg" width="60" alt="Foto de Moises Alciati"> | Moises Alciati | 575893 | 1TDSPB | Banco de dados | [GitHub](https://github.com/moisesalciati) · [LinkedIn](https://www.linkedin.com/in/moises-de-oliveira-alciati-08a944441/) |
-| <img src="assets/imagens/integrantes/integrante-4.svg" width="60" alt="Foto de Claudio Augusto Silva de Assis"> | Claudio Augusto Silva de Assis | 576661 | 1TDSPB | Python, IA e chatbot | [GitHub](https://github.com/claudiosilva06) · [LinkedIn](https://www.linkedin.com/in/claudio-augusto-b7660a433/) |
+| <img src="assets/imagens/integrantes/claudio.png" width="60" alt="Foto de Claudio Augusto Silva de Assis"> | Claudio Augusto Silva de Assis | 576661 | 1TDSPB | Python, IA e chatbot | [GitHub](https://github.com/claudiosilva06) · [LinkedIn](https://www.linkedin.com/in/claudio-augusto-b7660a433/) |
 
 Projeto desenvolvido para o Challenge FIAP 2026 em parceria com a **Turma do Bem**. Os dados de 2025 citados no site foram informados pela organização.
 
