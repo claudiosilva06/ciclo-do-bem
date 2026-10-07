@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Perguntas e respostas sobre o Ciclo do Bem para doadores, empresas e a equipe.">
+    <title>Perguntas frequentes | Ciclo do Bem</title>
+    <link rel="icon" href="assets/imagens/logo-ciclo-do-bem.svg" type="image/svg+xml">
+
+    <!-- Fontes: Poppins (títulos) e Nunito (textos) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Estilos do projeto: base > componentes > páginas -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/componentes.css">
+    <link rel="stylesheet" href="css/paginas.css">
+</head>
+<body>
+    <!-- Atalho de acessibilidade para quem navega pelo teclado -->
+    <a href="#conteudo" class="pular-conteudo">Pular para o conteúdo</a>
+
+    <!-- ===== CABEÇALHO (igual em todas as páginas) ===== -->
+    <header class="cabecalho">
+        <div class="container cabecalho-conteudo">
+            <a href="index.html" class="logo" aria-label="Ciclo do Bem — voltar para a página inicial">
+                <img class="logo-imagem" src="assets/imagens/logo-ciclo-do-bem.svg" alt="" width="44" height="44">
+                <span class="logo-texto">Ciclo do Bem</span>
+            </a>
+
+            <!-- Menu principal de navegação -->
+            <nav aria-label="Menu principal">
+                <ul class="menu-lista">
+                    <li><a href="index.html" class="menu-link">Início</a></li>
+                    <li><a href="sobre.html" class="menu-link">Sobre</a></li>
+                    <li class="menu-item-submenu">
+                        <a href="doador.html" class="menu-link menu-link-seta">Solução</a>
+                        <ul class="submenu">
+                            <li><a href="doador.html" class="submenu-link">Para doadores<span class="submenu-descricao">Nota Fiscal Paulista e portal</span></a></li>
+                            <li><a href="empresas.html" class="submenu-link">Para empresas<span class="submenu-descricao">Funil, patrocínio e editais</span></a></li>
+                            <li><a href="painel.html" class="submenu-link">Painel da equipe<span class="submenu-descricao">Indicadores e alertas</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="integrantes.html" class="menu-link">Integrantes</a></li>
+                    <li><a href="faq.html" class="menu-link menu-link-ativo" aria-current="page">FAQ</a></li>
+                    <li><a href="contato.html" class="btn btn-primario btn-pequeno">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== CONTEÚDO PRINCIPAL ===== -->
+    <main id="conteudo">
+        <!-- ===== TOPO DA PÁGINA ===== -->
+        <section class="topo-pagina" aria-labelledby="titulo-pagina">
+            <div class="container">
+                <div class="topo-pagina-conteudo">
+                    <span class="etiqueta">FAQ</span>
+                    <h1 id="titulo-pagina">Perguntas frequentes</h1>
+                    <p class="texto-destaque">Respostas rápidas sobre o projeto, para doadores, empresas e sobre privacidade.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PERGUNTAS E RESPOSTAS ===== -->
+        <!-- Cada pergunta usa <details> e <summary>: abre e fecha sem JavaScript -->
+        <div class="secao">
+            <div class="container faq-layout">
+                <div>
+                    <!-- Grupo 1: sobre o projeto -->
+                    <section class="faq-grupo" aria-labelledby="faq-projeto">
+                        <h2 id="faq-projeto">Sobre o projeto</h2>
+                        <details class="faq-item">
+                            <summary class="faq-pergunta">O que é o Ciclo do Bem?</summary>
+                            <div class="faq-resposta">
+                                <p>É uma plataforma de captação e relacionamento com apoiadores, proposta para a Turma do Bem. Ela ajuda a encontrar, qualificar e fidelizar doadores pessoa física e patrocinadores, para diversificar a receita da organização.</p>
+                            </div>
+                        </details>
+                        <details class="faq-item">
+                            <summary class="faq-pergunta">O Ciclo do Bem substitui o Salesforce?</summary>
+                            <div class="faq-resposta">
+                                <p>Não. O Salesforce continua sendo a base de dados da Turma do Bem. O Ciclo do Bem funciona como uma camada de funil, automação, impacto e IA conectada a ele, e acaba com a digitação manual das doações da plataforma Doare.</p>
+                            </div>
+                        </details>
+                        <details class="faq-item">
+                            <summary class="faq-pergunta">Este site já funciona de verdade?</summary>
+                            <div class="faq-resposta">
+                                <p>Ainda não. Esta é a primeira sprint: um protótipo estático, feito só com HTML e CSS, para mostrar como a solução vai funcionar. Os dados das telas são ilustrativos, e as funcionalidades entram nas próximas sprints.</p>
+                            </div>
+                        </details>
+                    </section>
+
+                    <!-- Grupo 2: para doadores -->
+                    <section class="faq-grupo" aria-labelledby="faq-doadores">
+                        <h2 id="faq-doadores">Para doadores</h2>
+                        <details class="faq-item">
+                            <summary class="faq-pergunta">Como doo meus créditos da Nota Fiscal Paulista?</summary>
+                            <div class="faq-resposta">
+                                <p>Entre no site ou aplicativo da Nota Fiscal Paulista com sua conta, procure a opção de doação automática para entidades, escolha a Turma do Bem e confirme. Depois, envie para nós o print da tela de confirmação.</p>
+                            </div>
+                        </details>
+                        <details class="faq-item">
+                            <summary class="faq-pergunta">Por que vocês pedem o print da tela?</summary>
+                            <div class="faq-resposta">
+                                <p>A Nota Fiscal Paulista não informa às entidades quem fez a doação. O print é a forma de confirmar que você escolheu a Turma do Bem e de te agradecer. No Ciclo do Bem, a validação desse print é automática.</p>
+                            </div>
+                        </details>
+                        <details class="faq-item">
+                            <summary class="faq-pergunta">Moro fora de São Paulo. Posso ajudar?</summary>
+                            <div class="faq-resposta">
+                                <p>Pode. A Nota Fiscal Paulista só gera créditos em compras feitas no estado de São Paulo, mas você pode doar diretamente pelo Amigos da Turma, de qualquer lugar do Brasil.</p>
+                            </div>
+                        </details>
+                        <details class="faq-item">
+                            <summary class="faq-pergunta">Quais formas de pagamento posso usar?</summary>
+                            <div class="faq-resposta">
+                                <p>A Turma do Bem aceita Pix, cartão de crédito, boleto, PayPal e PicPay. A doação mensal automática é feita pelo cartão de crédito, e também existem doações únicas e anuais.</p>
+                            </div>
+                        </details>
+                        <details class="faq-item">
+                            <summary class="faq-pergunta">Como mudo o valor ou cancelo minha doação?</summary>
+                            <div class="faq-resposta">
+                                <p>Pelo portal do doador ou pelo chatbot. Se quiser falar com uma pessoa, o chatbot chama alguém da equipe.</p>
+                            </div>
+                        </details>
+                    </section>
+
+                    <!-- Grupo 3: para empresas -->
+                    <section class="faq-grupo" aria-labelledby="faq-empresas">
+                        <h2 id="faq-empresas">Para empresas</h2>
+                        <details class="faq-item">
+                            <summary class="faq-pergunta">Minha empresa precisa ser da área de odontologia?</summary>
+                            <div class="faq-resposta">
+                                <p>Não. Sem tratamento dentário, é difícil conseguir emprego. Por isso a causa conversa com empresas de RH, varejo, bancos e qualquer marca com metas sociais ou de diversidade.</p>
+                            </div>
+                        </details>
+                        <details class="faq-item">
+                            <summary class="faq-pergunta">Dá para patrocinar usando leis de incentivo?</summary>
+                            <div class="faq-resposta">
+                                <p>Sim. A Turma do Bem tem projetos na Lei Rouanet, no ProAC ICMS, no Fumcad e no Condeca. Cada lei tem regras próprias sobre quem pode participar e quanto pode ser destinado.</p>
+                            </div>
+                        </details>
+                        <details class="faq-item">
+                            <summary class="faq-pergunta">Que retorno a empresa recebe?</summary>
+                            <div class="faq-resposta">
+                                <p>Um relatório de impacto com os tratamentos financiados, as cidades e os programas apoiados, sempre com dados agregados. Ele pode ser usado no relatório de sustentabilidade da empresa.</p>
+                            </div>
+                        </details>
+                    </section>
+
+                    <!-- Grupo 4: privacidade -->
+                    <section class="faq-grupo" aria-labelledby="faq-privacidade">
+                        <h2 id="faq-privacidade">Privacidade e LGPD</h2>
+                        <details class="faq-item">
+                            <summary class="faq-pergunta">Vocês mostram dados dos pacientes?</summary>
+                            <div class="faq-resposta">
+                                <p>Nunca. Doadores e empresas veem apenas resultados agregados e histórias sem informações pessoais. No Apolônias do Bem, a comunicação é sempre em termos gerais, sem citar beneficiárias.</p>
+                            </div>
+                        </details>
+                        <details class="faq-item">
+                            <summary class="faq-pergunta">Como meus dados são usados?</summary>
+                            <div class="faq-resposta">
+                                <p>Só para registrar suas doações e manter contato com você, conforme a autorização que você deu. Cada consentimento fica guardado com data e finalidade, e você pode pedir para alterar ou excluir seus dados.</p>
+                            </div>
+                        </details>
+                    </section>
+                </div>
+
+                <!-- Caixa lateral de ajuda -->
+                <aside class="faq-lateral">
+                    <div class="card card-escuro">
+                        <span class="icone-circulo icone-circulo-laranja"><img src="assets/icones/icone-chat.svg" alt=""></span>
+                        <h2 class="rodape-titulo">Não achou sua resposta?</h2>
+                        <p>Mande sua dúvida para a equipe do projeto. Respondemos o quanto antes.</p>
+                        <a href="contato.html" class="btn btn-primario">Fale com a gente</a>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- ===== RODAPÉ (igual em todas as páginas) ===== -->
+    <footer class="rodape">
+        <div class="container">
+            <div class="rodape-grade">
+                <div>
+                    <a href="index.html" class="logo" aria-label="Ciclo do Bem — página inicial">
+                        <img class="logo-imagem" src="assets/imagens/logo-ciclo-do-bem.svg" alt="" width="44" height="44">
+                        <span class="logo-texto">Ciclo do Bem</span>
+                    </a>
+                    <p class="rodape-descricao">Plataforma de captação e relacionamento com apoiadores, proposta para a Turma do Bem no Challenge FIAP.</p>
+                </div>
+
+                <nav aria-label="Páginas do site">
+                    <h2 class="rodape-titulo">Navegação</h2>
+                    <ul class="rodape-lista">
+                        <li><a href="index.html" class="rodape-link">Início</a></li>
+                        <li><a href="sobre.html" class="rodape-link">Sobre</a></li>
+                        <li><a href="integrantes.html" class="rodape-link">Integrantes</a></li>
+                        <li><a href="faq.html" class="rodape-link">FAQ</a></li>
+                        <li><a href="contato.html" class="rodape-link">Contato</a></li>
+                    </ul>
+                </nav>
+
+                <nav aria-label="Páginas da solução">
+                    <h2 class="rodape-titulo">Solução</h2>
+                    <ul class="rodape-lista">
+                        <li><a href="doador.html" class="rodape-link">Para doadores</a></li>
+                        <li><a href="empresas.html" class="rodape-link">Para empresas</a></li>
+                        <li><a href="painel.html" class="rodape-link">Painel da equipe</a></li>
+                    </ul>
+                </nav>
+
+                <div>
+                    <h2 class="rodape-titulo">Projeto</h2>
+                    <ul class="rodape-lista">
+                        <li><a href="https://github.com/claudiosilva06/ciclo-do-bem" class="rodape-link" target="_blank" rel="noopener noreferrer">Repositório no GitHub</a></li>
+                        <li><a href="mailto:projetotdbfiap@gmail.com" class="rodape-link">E-mail do grupo</a></li>
+                        <li><span class="rodape-link">Turma 1TDSPB · FIAP</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="rodape-base">
+                <p>© 2026 Equipe Ciclo do Bem · Projeto acadêmico do Challenge FIAP em parceria com a Turma do Bem.</p>
+                <p>Protótipo estático · dados ilustrativos</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

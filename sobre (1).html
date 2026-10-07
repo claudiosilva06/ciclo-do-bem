@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contexto, solução proposta, tecnologias e roadmap do projeto Ciclo do Bem.">
+    <title>Sobre o projeto | Ciclo do Bem</title>
+    <link rel="icon" href="assets/imagens/logo-ciclo-do-bem.svg" type="image/svg+xml">
+
+    <!-- Fontes: Poppins (títulos) e Nunito (textos) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Estilos do projeto: base > componentes > páginas -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/componentes.css">
+    <link rel="stylesheet" href="css/paginas.css">
+</head>
+<body>
+    <!-- Atalho de acessibilidade para quem navega pelo teclado -->
+    <a href="#conteudo" class="pular-conteudo">Pular para o conteúdo</a>
+
+    <!-- ===== CABEÇALHO (igual em todas as páginas) ===== -->
+    <header class="cabecalho">
+        <div class="container cabecalho-conteudo">
+            <a href="index.html" class="logo" aria-label="Ciclo do Bem — voltar para a página inicial">
+                <img class="logo-imagem" src="assets/imagens/logo-ciclo-do-bem.svg" alt="" width="44" height="44">
+                <span class="logo-texto">Ciclo do Bem</span>
+            </a>
+
+            <!-- Menu principal de navegação -->
+            <nav aria-label="Menu principal">
+                <ul class="menu-lista">
+                    <li><a href="index.html" class="menu-link">Início</a></li>
+                    <li><a href="sobre.html" class="menu-link menu-link-ativo" aria-current="page">Sobre</a></li>
+                    <li class="menu-item-submenu">
+                        <a href="doador.html" class="menu-link menu-link-seta">Solução</a>
+                        <ul class="submenu">
+                            <li><a href="doador.html" class="submenu-link">Para doadores<span class="submenu-descricao">Nota Fiscal Paulista e portal</span></a></li>
+                            <li><a href="empresas.html" class="submenu-link">Para empresas<span class="submenu-descricao">Funil, patrocínio e editais</span></a></li>
+                            <li><a href="painel.html" class="submenu-link">Painel da equipe<span class="submenu-descricao">Indicadores e alertas</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="integrantes.html" class="menu-link">Integrantes</a></li>
+                    <li><a href="faq.html" class="menu-link">FAQ</a></li>
+                    <li><a href="contato.html" class="btn btn-primario btn-pequeno">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== CONTEÚDO PRINCIPAL ===== -->
+    <main id="conteudo">
+        <!-- ===== TOPO DA PÁGINA ===== -->
+        <section class="topo-pagina" aria-labelledby="titulo-pagina">
+            <div class="container">
+                <div class="topo-pagina-conteudo">
+                    <span class="etiqueta">Sobre o projeto</span>
+                    <h1 id="titulo-pagina">Tecnologia para manter o ciclo do bem girando</h1>
+                    <p class="texto-destaque">Contexto, solução proposta, tecnologias e o caminho até a entrega final.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CONTEXTO: A TURMA DO BEM ===== -->
+        <section class="secao secao-branca" aria-labelledby="titulo-contexto">
+            <div class="container duas-colunas">
+                <div>
+                    <span class="etiqueta">Contexto</span>
+                    <h2 id="titulo-contexto">Quem é a Turma do Bem</h2>
+                    <p>A Turma do Bem é uma organização social brasileira que oferece tratamento odontológico gratuito por meio de uma rede de dentistas voluntários.</p>
+                    <p>Sem tratamento, muitas pessoas perdem os dentes e, com eles, a confiança para estudar e conseguir um emprego. É o chamado ciclo da pobreza, que a Turma do Bem ajuda a quebrar.</p>
+                    <p>Este projeto nasceu no Challenge da FIAP, em que a Turma do Bem pediu soluções para fortalecer a captação de recursos.</p>
+                </div>
+
+                <div class="programas">
+                    <article class="card card-interativo">
+                        <div class="card-cabecalho">
+                            <span class="icone-circulo icone-circulo-laranja"><img src="assets/icones/icone-sorriso.svg" alt=""></span>
+                            <h3>Dentista do Bem</h3>
+                        </div>
+                        <p>Atendimento odontológico gratuito para crianças e adolescentes de baixa renda.</p>
+                    </article>
+                    <article class="card card-interativo">
+                        <div class="card-cabecalho">
+                            <span class="icone-circulo"><img src="assets/icones/icone-coracao.svg" alt=""></span>
+                            <h3>Apolônias do Bem</h3>
+                        </div>
+                        <p>Tratamento odontológico gratuito para mulheres que sofreram violência.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== O PROBLEMA EM NÚMEROS ===== -->
+        <section class="secao" aria-labelledby="titulo-numeros">
+            <div class="container">
+                <div class="secao-cabecalho">
+                    <span class="etiqueta">O problema</span>
+                    <h2 id="titulo-numeros">Uma receita concentrada e pouco organizada</h2>
+                    <p>Os números abaixo foram informados pela própria Turma do Bem e mostram por que diversificar a captação é urgente.</p>
+                </div>
+
+                <div class="grade grade-4">
+                    <article class="indicador">
+                        <h3 class="indicador-rotulo">Orçamento de 2025 vindo de empresas</h3>
+                        <p class="indicador-valor">75%</p>
+                    </article>
+                    <article class="indicador">
+                        <h3 class="indicador-rotulo">Patrocinadores que sustentam esse valor</h3>
+                        <p class="indicador-valor">~10</p>
+                    </article>
+                    <article class="indicador">
+                        <h3 class="indicador-rotulo">Doadores ativos no Amigos da Turma</h3>
+                        <p class="indicador-valor">66</p>
+                    </article>
+                    <article class="indicador">
+                        <h3 class="indicador-rotulo">Doadores automáticos da Nota Fiscal Paulista</h3>
+                        <p class="indicador-valor">100</p>
+                    </article>
+                </div>
+                <p class="texto-fonte">Fonte: respostas da Turma do Bem às dúvidas do Challenge FIAP (2026).</p>
+            </div>
+        </section>
+
+        <!-- ===== SOLUÇÃO PROPOSTA ===== -->
+        <section class="secao secao-branca" aria-labelledby="titulo-proposta">
+            <div class="container duas-colunas">
+                <div>
+                    <span class="etiqueta">Solução proposta</span>
+                    <h2 id="titulo-proposta">O que o Ciclo do Bem faz</h2>
+                    <p>Uma plataforma de relacionamento que se conecta ao Salesforce e à plataforma de doação que a Turma do Bem já usa.</p>
+                    <ul class="lista-marcada">
+                        <li>Transforma doadores da Nota Fiscal Paulista em doadores mensais.</li>
+                        <li>Acompanha cada doador do primeiro contato até virar embaixador.</li>
+                        <li>Organiza o funil de patrocinadores e os editais em um só lugar.</li>
+                        <li>Usa IA para priorizar contatos e prever quem pode parar de doar.</li>
+                        <li>Mostra o impacto sem expor nenhum paciente, seguindo a LGPD.</li>
+                    </ul>
+                </div>
+
+                <article class="card card-escuro">
+                    <span class="etiqueta">Métrica norte</span>
+                    <h3>Receita diversificada</h3>
+                    <p>Mais doadores pessoa física e mais patrocinadores diferentes, para que a saída de uma empresa não coloque o atendimento em risco.</p>
+                    <h4 class="rodape-titulo">Objetivos de Desenvolvimento Sustentável</h4>
+                    <ul class="ods-lista">
+                        <li class="selo selo-laranja">ODS 3 · Saúde e bem-estar</li>
+                        <li class="selo selo-laranja">ODS 5 · Igualdade de gênero</li>
+                        <li class="selo selo-laranja">ODS 10 · Redução das desigualdades</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- ===== TECNOLOGIAS ===== -->
+        <section class="secao" aria-labelledby="titulo-tecnologias">
+            <div class="container">
+                <div class="secao-cabecalho">
+                    <span class="etiqueta">Tecnologias</span>
+                    <h2 id="titulo-tecnologias">Com o que vamos construir</h2>
+                    <p>Cada parte da plataforma usa o que estamos aprendendo nas disciplinas do curso.</p>
+                </div>
+
+                <div class="grade grade-4">
+                    <article class="card tecnologia-card">
+                        <h3>HTML5 e CSS3</h3>
+                        <p>Estrutura e visual deste site.</p>
+                        <span class="selo selo-escuro tecnologia-sprint">Sprint 1</span>
+                    </article>
+                    <article class="card tecnologia-card">
+                        <h3>JavaScript</h3>
+                        <p>Interatividade do portal e do painel.</p>
+                        <span class="selo tecnologia-sprint">A partir da Sprint 2</span>
+                    </article>
+                    <article class="card tecnologia-card">
+                        <h3>Java</h3>
+                        <p>Regras de negócio e back-end, com DDD.</p>
+                        <span class="selo tecnologia-sprint">Modelagem na Sprint 1</span>
+                    </article>
+                    <article class="card tecnologia-card">
+                        <h3>Python</h3>
+                        <p>Pontuação de doadores e alertas da IA.</p>
+                        <span class="selo selo-escuro tecnologia-sprint">Sprint 1</span>
+                    </article>
+                    <article class="card tecnologia-card">
+                        <h3>Oracle</h3>
+                        <p>Banco de dados de apoiadores, doações e editais.</p>
+                        <span class="selo tecnologia-sprint">Modelagem na Sprint 1</span>
+                    </article>
+                    <article class="card tecnologia-card">
+                        <h3>IBM watsonx Assistant</h3>
+                        <p>Chatbot: Telegram no protótipo, WhatsApp em produção.</p>
+                        <span class="selo tecnologia-sprint">Documentação na Sprint 1</span>
+                    </article>
+                    <article class="card tecnologia-card">
+                        <h3>Git e GitHub</h3>
+                        <p>Versionamento e trabalho em equipe.</p>
+                        <span class="selo selo-escuro tecnologia-sprint">Todas as sprints</span>
+                    </article>
+                    <article class="card tecnologia-card">
+                        <h3>Salesforce</h3>
+                        <p>Base de dados atual da Turma do Bem, integrada à plataforma.</p>
+                        <span class="selo tecnologia-sprint">Integração futura</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== ROADMAP ===== -->
+        <section class="secao secao-branca" aria-labelledby="titulo-roadmap">
+            <div class="container">
+                <div class="secao-cabecalho">
+                    <span class="etiqueta">Roadmap</span>
+                    <h2 id="titulo-roadmap">Do protótipo à entrega final</h2>
+                    <p>O projeto é desenvolvido em quatro sprints, duas em 2026 e duas em 2027.</p>
+                </div>
+
+                <ol class="linha-tempo">
+                    <li class="linha-tempo-item linha-tempo-atual">
+                        <span class="linha-tempo-data">Sprint 1 · 10/10/2026</span>
+                        <h3>Proposta e base</h3>
+                        <p>Proposta, backlog, site desktop, modelo de dados, diagrama de classes e chatbot documentado.</p>
+                    </li>
+                    <li class="linha-tempo-item">
+                        <span class="linha-tempo-data">Sprint 2 · 01/11/2026</span>
+                        <h3>Interação</h3>
+                        <p>Site responsivo com JavaScript, modelos lógico e físico e chatbot no Telegram.</p>
+                    </li>
+                    <li class="linha-tempo-item">
+                        <span class="linha-tempo-data">Sprint 3 · 2027</span>
+                        <h3>Dados vivos</h3>
+                        <p>Banco implementado, back-end conectado e pontuações da IA rodando.</p>
+                    </li>
+                    <li class="linha-tempo-item">
+                        <span class="linha-tempo-data">Sprint 4 · 2027</span>
+                        <h3>Entrega final</h3>
+                        <p>Painel completo, integrações, testes e apresentação para a Turma do Bem.</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== RODAPÉ (igual em todas as páginas) ===== -->
+    <footer class="rodape">
+        <div class="container">
+            <div class="rodape-grade">
+                <div>
+                    <a href="index.html" class="logo" aria-label="Ciclo do Bem — página inicial">
+                        <img class="logo-imagem" src="assets/imagens/logo-ciclo-do-bem.svg" alt="" width="44" height="44">
+                        <span class="logo-texto">Ciclo do Bem</span>
+                    </a>
+                    <p class="rodape-descricao">Plataforma de captação e relacionamento com apoiadores, proposta para a Turma do Bem no Challenge FIAP.</p>
+                </div>
+
+                <nav aria-label="Páginas do site">
+                    <h2 class="rodape-titulo">Navegação</h2>
+                    <ul class="rodape-lista">
+                        <li><a href="index.html" class="rodape-link">Início</a></li>
+                        <li><a href="sobre.html" class="rodape-link">Sobre</a></li>
+                        <li><a href="integrantes.html" class="rodape-link">Integrantes</a></li>
+                        <li><a href="faq.html" class="rodape-link">FAQ</a></li>
+                        <li><a href="contato.html" class="rodape-link">Contato</a></li>
+                    </ul>
+                </nav>
+
+                <nav aria-label="Páginas da solução">
+                    <h2 class="rodape-titulo">Solução</h2>
+                    <ul class="rodape-lista">
+                        <li><a href="doador.html" class="rodape-link">Para doadores</a></li>
+                        <li><a href="empresas.html" class="rodape-link">Para empresas</a></li>
+                        <li><a href="painel.html" class="rodape-link">Painel da equipe</a></li>
+                    </ul>
+                </nav>
+
+                <div>
+                    <h2 class="rodape-titulo">Projeto</h2>
+                    <ul class="rodape-lista">
+                        <li><a href="https://github.com/claudiosilva06/ciclo-do-bem" class="rodape-link" target="_blank" rel="noopener noreferrer">Repositório no GitHub</a></li>
+                        <li><a href="mailto:projetotdbfiap@gmail.com" class="rodape-link">E-mail do grupo</a></li>
+                        <li><span class="rodape-link">Turma 1TDSPB · FIAP</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="rodape-base">
+                <p>© 2026 Equipe Ciclo do Bem · Projeto acadêmico do Challenge FIAP em parceria com a Turma do Bem.</p>
+                <p>Protótipo estático · dados ilustrativos</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

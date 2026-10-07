@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Painel com indicadores, alertas e prioridades da equipe de captação da Turma do Bem.">
+    <title>Painel da equipe | Ciclo do Bem</title>
+    <link rel="icon" href="assets/imagens/logo-ciclo-do-bem.svg" type="image/svg+xml">
+
+    <!-- Fontes: Poppins (títulos) e Nunito (textos) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Estilos do projeto: base > componentes > páginas -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/componentes.css">
+    <link rel="stylesheet" href="css/paginas.css">
+</head>
+<body>
+    <!-- Atalho de acessibilidade para quem navega pelo teclado -->
+    <a href="#conteudo" class="pular-conteudo">Pular para o conteúdo</a>
+
+    <!-- ===== CABEÇALHO (igual em todas as páginas) ===== -->
+    <header class="cabecalho">
+        <div class="container cabecalho-conteudo">
+            <a href="index.html" class="logo" aria-label="Ciclo do Bem — voltar para a página inicial">
+                <img class="logo-imagem" src="assets/imagens/logo-ciclo-do-bem.svg" alt="" width="44" height="44">
+                <span class="logo-texto">Ciclo do Bem</span>
+            </a>
+
+            <!-- Menu principal de navegação -->
+            <nav aria-label="Menu principal">
+                <ul class="menu-lista">
+                    <li><a href="index.html" class="menu-link">Início</a></li>
+                    <li><a href="sobre.html" class="menu-link">Sobre</a></li>
+                    <li class="menu-item-submenu">
+                        <a href="doador.html" class="menu-link menu-link-ativo menu-link-seta" aria-current="page">Solução</a>
+                        <ul class="submenu">
+                            <li><a href="doador.html" class="submenu-link">Para doadores<span class="submenu-descricao">Nota Fiscal Paulista e portal</span></a></li>
+                            <li><a href="empresas.html" class="submenu-link">Para empresas<span class="submenu-descricao">Funil, patrocínio e editais</span></a></li>
+                            <li><a href="painel.html" class="submenu-link" aria-current="page">Painel da equipe<span class="submenu-descricao">Indicadores e alertas</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="integrantes.html" class="menu-link">Integrantes</a></li>
+                    <li><a href="faq.html" class="menu-link">FAQ</a></li>
+                    <li><a href="contato.html" class="btn btn-primario btn-pequeno">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== CONTEÚDO PRINCIPAL ===== -->
+    <main id="conteudo">
+        <!-- ===== TOPO DA PÁGINA ===== -->
+        <section class="topo-pagina" aria-labelledby="titulo-pagina">
+            <div class="container">
+                <div class="topo-pagina-conteudo">
+                    <span class="etiqueta">Solução · Painel da equipe</span>
+                    <h1 id="titulo-pagina">Um painel para as 5 pessoas da captação</h1>
+                    <p class="texto-destaque">Indicadores, alertas e prioridades em um só lugar, para a equipe parar de procurar informação e passar a agir.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PROTÓTIPO: VISÃO GERAL DO PAINEL ===== -->
+        <section class="secao secao-branca" aria-labelledby="titulo-visao-geral">
+            <div class="container">
+                <div class="secao-cabecalho">
+                    <span class="etiqueta">Protótipo</span>
+                    <h2 id="titulo-visao-geral">Visão geral</h2>
+                    <p>A primeira tela que a equipe vê ao entrar na plataforma.</p>
+                </div>
+
+                <!-- Indicadores principais -->
+                <div class="grade grade-4">
+                    <article class="indicador">
+                        <h3 class="indicador-rotulo">Receita vinda de empresas (2025)</h3>
+                        <p class="indicador-valor">75%</p>
+                        <p class="indicador-variacao indicador-variacao-negativa">Meta: reduzir a dependência</p>
+                    </article>
+                    <article class="indicador">
+                        <h3 class="indicador-rotulo">Doadores ativos no Amigos da Turma</h3>
+                        <p class="indicador-valor">66</p>
+                        <p class="indicador-variacao">+4 neste mês</p>
+                    </article>
+                    <article class="indicador">
+                        <h3 class="indicador-rotulo">Doadores automáticos da NFP</h3>
+                        <p class="indicador-valor">100</p>
+                        <p class="indicador-variacao">6 prints validados hoje</p>
+                    </article>
+                    <article class="indicador">
+                        <h3 class="indicador-rotulo">Doadores em risco de evasão</h3>
+                        <p class="indicador-valor">3</p>
+                        <p class="indicador-variacao indicador-variacao-negativa">Agir nesta semana</p>
+                    </article>
+                </div>
+
+                <div class="painel-grade">
+                    <!-- Gráfico de receita por origem -->
+                    <article class="card">
+                        <h3>Receita por origem em 2025</h3>
+                        <ul class="grafico-barras">
+                            <li>
+                                <p class="grafico-rotulo">Patrocínio de empresas <span>75%</span></p>
+                                <div class="barra" role="img" aria-label="75% da receita veio de empresas">
+                                    <div class="barra-preenchimento largura-75"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="grafico-rotulo">Outras fontes (pessoas físicas, NFP, eventos) <span>25%</span></p>
+                                <div class="barra" role="img" aria-label="25% da receita veio de outras fontes">
+                                    <div class="barra-preenchimento barra-preenchimento-verde largura-25"></div>
+                                </div>
+                            </li>
+                        </ul>
+                        <p class="texto-fonte">Fonte: Turma do Bem (75,23% do orçamento de 2025 veio de patrocínio de empresas).</p>
+                    </article>
+
+                    <!-- Alertas do dia -->
+                    <article class="card">
+                        <h3>Alertas de hoje</h3>
+                        <ul class="alertas-lista">
+                            <li class="alerta-item">
+                                <span class="icone-circulo icone-circulo-pequeno icone-circulo-laranja"><img src="assets/icones/icone-sino-laranja.svg" alt=""></span>
+                                <div>
+                                    <h4>3 doadores com risco alto</h4>
+                                    <p>Sem doar há mais de 60 dias.</p>
+                                </div>
+                            </li>
+                            <li class="alerta-item">
+                                <span class="icone-circulo icone-circulo-pequeno icone-circulo-laranja"><img src="assets/icones/icone-relogio-laranja.svg" alt=""></span>
+                                <div>
+                                    <h4>Contrato vence em 87 dias</h4>
+                                    <p>Patrocinador A: preparar a renovação.</p>
+                                </div>
+                            </li>
+                            <li class="alerta-item">
+                                <span class="icone-circulo icone-circulo-pequeno"><img src="assets/icones/icone-edital.svg" alt=""></span>
+                                <div>
+                                    <h4>ProAC ICMS em 15 dias</h4>
+                                    <p>Inscrição em preparo.</p>
+                                </div>
+                            </li>
+                            <li class="alerta-item">
+                                <span class="icone-circulo icone-circulo-pequeno"><img src="assets/icones/icone-check.svg" alt=""></span>
+                                <div>
+                                    <h4>6 prints da NFP validados</h4>
+                                    <p>Convites de doação mensal enviados.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </article>
+                </div>
+                <p class="aviso">Painel ilustrativo: os números de 2025 foram informados pela Turma do Bem; os demais são fictícios.</p>
+            </div>
+        </section>
+
+        <!-- ===== FUNIL RESUMIDO ===== -->
+        <section class="secao" aria-labelledby="titulo-funil-resumo">
+            <div class="container">
+                <div class="secao-cabecalho">
+                    <span class="etiqueta">Funil de patrocinadores</span>
+                    <h2 id="titulo-funil-resumo">Previsão de receita por etapa</h2>
+                    <p>O painel soma o valor estimado de cada etapa do funil e mostra onde concentrar esforço.</p>
+                </div>
+
+                <div class="tabela-envoltorio">
+                    <table class="tabela">
+                        <thead>
+                            <tr>
+                                <th scope="col">Etapa</th>
+                                <th scope="col">Oportunidades</th>
+                                <th scope="col">Valor estimado</th>
+                                <th scope="col">Chance média</th>
+                                <th scope="col">Próximo passo da equipe</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tabela-coluna-forte">Prospecção</td>
+                                <td>3</td>
+                                <td>A definir</td>
+                                <td>10%</td>
+                                <td>Primeiro contato com a área de ESG</td>
+                            </tr>
+                            <tr>
+                                <td class="tabela-coluna-forte">Qualificação</td>
+                                <td>2</td>
+                                <td>R$ 95 mil</td>
+                                <td>30%</td>
+                                <td>Reuniões de apresentação</td>
+                            </tr>
+                            <tr>
+                                <td class="tabela-coluna-forte">Proposta</td>
+                                <td>1</td>
+                                <td>R$ 120 mil</td>
+                                <td>50%</td>
+                                <td>Cobrar retorno até 20/10</td>
+                            </tr>
+                            <tr>
+                                <td class="tabela-coluna-forte">Negociação</td>
+                                <td>1</td>
+                                <td>R$ 80 mil</td>
+                                <td>70%</td>
+                                <td>Fechar contrapartidas</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="aviso">Valores fictícios.</p>
+            </div>
+        </section>
+
+        <!-- ===== COMO A IA PRIORIZA ===== -->
+        <section class="secao secao-branca" aria-labelledby="titulo-ia">
+            <div class="container">
+                <div class="secao-cabecalho">
+                    <span class="etiqueta">Inteligência artificial</span>
+                    <h2 id="titulo-ia">Como a IA decide — versão 1</h2>
+                    <p>A primeira versão usa regras de pontuação em Python. Depois, o histórico que a Turma do Bem guarda no Salesforce desde 2014 permite evoluir para machine learning.</p>
+                </div>
+
+                <div class="tabela-envoltorio">
+                    <table class="tabela">
+                        <thead>
+                            <tr>
+                                <th scope="col">Modelo</th>
+                                <th scope="col">Sinais usados</th>
+                                <th scope="col">O que entrega</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tabela-coluna-forte">Validação do print da NFP</td>
+                                <td>Imagem da tela de confirmação enviada pelo doador</td>
+                                <td>Doação confirmada e cadastro criado</td>
+                            </tr>
+                            <tr>
+                                <td class="tabela-coluna-forte">Chance de doar</td>
+                                <td>Origem do contato, mensagens abertas, cliques, tempo desde o cadastro</td>
+                                <td>Nota de 0 a 100 e fila de contato</td>
+                            </tr>
+                            <tr>
+                                <td class="tabela-coluna-forte">Risco de evasão</td>
+                                <td>Dias sem doar, queda no valor, falha no pagamento</td>
+                                <td>Alerta alto, médio ou baixo</td>
+                            </tr>
+                            <tr>
+                                <td class="tabela-coluna-forte">Sugestão de patrocinadores</td>
+                                <td>Setor, relatório ESG, ODS declarados, cidades onde atua</td>
+                                <td>Lista de empresas por afinidade</td>
+                            </tr>
+                            <tr>
+                                <td class="tabela-coluna-forte">Aderência a editais</td>
+                                <td>Requisitos, público, região e valor do edital</td>
+                                <td>Editais recomendados por programa</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== UM DIA COM O CICLO DO BEM ===== -->
+        <section class="secao" aria-labelledby="titulo-um-dia">
+            <div class="container">
+                <div class="secao-cabecalho">
+                    <span class="etiqueta">Na prática</span>
+                    <h2 id="titulo-um-dia">Um dia com o Ciclo do Bem</h2>
+                    <p>Como fica a rotina de uma pessoa da equipe de captação.</p>
+                </div>
+
+                <ol class="agenda">
+                    <li class="card">
+                        <span class="agenda-hora">09:00</span>
+                        <p>Abre o painel: 3 doadores em risco e 1 contrato vencendo em 87 dias.</p>
+                    </li>
+                    <li class="card">
+                        <span class="agenda-hora">10:30</span>
+                        <p>A IA sugere 5 empresas de varejo com metas de empregabilidade. Ela move 2 para qualificação.</p>
+                    </li>
+                    <li class="card">
+                        <span class="agenda-hora">14:00</span>
+                        <p>Um edital com prazo em 15 dias combina com o Dentista do Bem. A inscrição entra em preparo.</p>
+                    </li>
+                    <li class="card card-escuro">
+                        <span class="agenda-hora">18:00</span>
+                        <p>Enquanto isso, a IA validou 6 prints da NFP e o chatbot resolveu 12 dúvidas sobre boleto e gov.br.</p>
+                    </li>
+                </ol>
+                <p class="aviso">Cenário ilustrativo, com números fictícios.</p>
+            </div>
+        </section>
+
+        <!-- ===== CHAMADA FINAL ===== -->
+        <section class="secao secao-branca" aria-labelledby="titulo-chamada">
+            <div class="container">
+                <div class="faixa-chamada">
+                    <div>
+                        <h2 id="titulo-chamada">Ficou alguma dúvida?</h2>
+                        <p>Veja as perguntas frequentes ou fale com a equipe do projeto.</p>
+                    </div>
+                    <div class="grupo-botoes">
+                        <a href="faq.html" class="btn btn-contorno">Ver o FAQ</a>
+                        <a href="contato.html" class="btn btn-secundario">Falar com a equipe</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===== RODAPÉ (igual em todas as páginas) ===== -->
+    <footer class="rodape">
+        <div class="container">
+            <div class="rodape-grade">
+                <div>
+                    <a href="index.html" class="logo" aria-label="Ciclo do Bem — página inicial">
+                        <img class="logo-imagem" src="assets/imagens/logo-ciclo-do-bem.svg" alt="" width="44" height="44">
+                        <span class="logo-texto">Ciclo do Bem</span>
+                    </a>
+                    <p class="rodape-descricao">Plataforma de captação e relacionamento com apoiadores, proposta para a Turma do Bem no Challenge FIAP.</p>
+                </div>
+
+                <nav aria-label="Páginas do site">
+                    <h2 class="rodape-titulo">Navegação</h2>
+                    <ul class="rodape-lista">
+                        <li><a href="index.html" class="rodape-link">Início</a></li>
+                        <li><a href="sobre.html" class="rodape-link">Sobre</a></li>
+                        <li><a href="integrantes.html" class="rodape-link">Integrantes</a></li>
+                        <li><a href="faq.html" class="rodape-link">FAQ</a></li>
+                        <li><a href="contato.html" class="rodape-link">Contato</a></li>
+                    </ul>
+                </nav>
+
+                <nav aria-label="Páginas da solução">
+                    <h2 class="rodape-titulo">Solução</h2>
+                    <ul class="rodape-lista">
+                        <li><a href="doador.html" class="rodape-link">Para doadores</a></li>
+                        <li><a href="empresas.html" class="rodape-link">Para empresas</a></li>
+                        <li><a href="painel.html" class="rodape-link">Painel da equipe</a></li>
+                    </ul>
+                </nav>
+
+                <div>
+                    <h2 class="rodape-titulo">Projeto</h2>
+                    <ul class="rodape-lista">
+                        <li><a href="https://github.com/claudiosilva06/ciclo-do-bem" class="rodape-link" target="_blank" rel="noopener noreferrer">Repositório no GitHub</a></li>
+                        <li><a href="mailto:projetotdbfiap@gmail.com" class="rodape-link">E-mail do grupo</a></li>
+                        <li><span class="rodape-link">Turma 1TDSPB · FIAP</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="rodape-base">
+                <p>© 2026 Equipe Ciclo do Bem · Projeto acadêmico do Challenge FIAP em parceria com a Turma do Bem.</p>
+                <p>Protótipo estático · dados ilustrativos</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
